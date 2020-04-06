@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			#mydiv1
+			{
+				background-color:#80dfff;
+				padding : 10px;	
+			}
+			
+			#heading1
+			{
+				display:inline;
+				position:relative;
+				bottom:10px;
+				color:white;
+			}
+			
+			img
+			{
+				position:relative;
+				left:10px;
+			}
+
+			#Menu
+			{
+				position:relative;
+				left:1500px;
+				color:red;
+				font-size:24px;
+			}
+		
+			#myfooter
+			{
+				position:relative;
+				top:415px;
+				height:40px;
+				
+			}
+
+			#footercontent
+			{
+				position : relative;
+				top:10px				
+			}
+			.mydivclass
+			{
+				display:inline;
+			}
+			
+			.mybutton
+			{
+				background-color: #0099ff;
+  				border: none;
+  				color: white;
+  				padding: 15px 32px;
+  				text-align: center;
+  				text-decoration: none;
+  				display: inline-block;
+  				font-size: 16px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+
+			}
+			
+			#myform
+			{
+				position:relative;
+				margin:10px 10px 10px 10px;
+				style="text-align:center";
+				
+			}
+		</style>
+		
+
+	</head>
+
+	<body>
+		<div id="mydiv1">
+			<h1 id="heading1">truYum</h1>
+			<img src="restau.jpg" alt="image not loaded" height=60px width=60px>
+			<a  id="Menu" href="admin.html">Menu</a>
+		</div>
+		
+		<div>
+			<center><form id="myform">
+				<h1 style="font-size:40px">Edit Menu Item</h1>
+				<table cellspacing="10" >
+					<tr>
+						<td colspan="4"><h5>Name</h5><input type="text" size="100"></td>
+					</tr>
+					<tr>
+						<td><h5>Price (Rs.)</h5><input type="number"></td>
+						<td><h5>Active</h5>	<input type="radio" value="Yes" name="myradio">Yes
+									<input type="radio" value="No" name="myradio">No</td>
+						<td><h5>Date of Launch</h5><input type="text"></td>
+						<td><h5>Category</h5><select>
+									<option>starters</option>
+									<option>Main Course</option>
+									<option>Dessert</option>
+									<option>Drinks</option>
+								</select>						
+					</tr>
+					<tr>
+						<td colspan="4"><input type="checkbox">Free Delivery</td>
+					</tr>
+					<tr>
+						<td colspan="4"><button class="mybutton" type="button" onClick="location.href='edit_menu_item_status.html'"> Save</td>
+					</tr>
+				</table>
+			</form></center>   
+
+			
+			<footer id="myfooter" style="background-color: #d8e5f3" >
+				<p id="footercontent">Copyright @ 2019</p>
+				
+			</footer>
+		
+		</div>
+	</body>
+</html>
